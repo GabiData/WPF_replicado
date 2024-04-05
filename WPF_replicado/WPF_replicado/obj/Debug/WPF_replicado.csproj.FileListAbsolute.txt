@@ -1,0 +1,16 @@
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\bin\Debug\WPF_replicado.exe.config
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\bin\Debug\WPF_replicado.exe
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\bin\Debug\WPF_replicado.pdb
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\MainWindow.g.cs
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\App.g.cs
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado_MarkupCompile.cache
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado_MarkupCompile.lref
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\MainWindow.baml
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.g.resources
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.Properties.Resources.resources
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.csproj.GenerateResource.cache
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.csproj.CoreCompileInputs.cache
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.exe
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.pdb
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\gabriella.silva\source\repos\WPF_replicado\WPF_replicado\obj\Debug\WPF_replicado.csprojAssemblyReference.cache

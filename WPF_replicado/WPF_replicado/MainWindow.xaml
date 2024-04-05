@@ -1,0 +1,81 @@
+﻿<Window x:Class="WPF_replicado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:info ="clr-namespace:WPF_replicado.Informacoes"
+        xmlns:variaveis ="clr-namespace:WPF_replicado.Variaveis"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1011" Background="MediumSlateBlue">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <info:Dados x:Key="Dados"/>
+            <variaveis:MainCommand x:Key="MainCommand"/>
+            <variaveis:MainView x:Key="MainView"/>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource MainView }">
+        <Button Content="Finalizar" HorizontalAlignment="Left" Margin="56,324,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.133,3.6" Background="Snow" BorderThickness="2" BorderBrush="Black" Height="34" Command="{Binding mainCommand}"/>
+
+
+
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="46,66,0,0" TextWrapping="Wrap" Text="{Binding Nome}" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.633,1.913" Background="Snow" BorderThickness="2" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="46,129,0,0" TextWrapping="Wrap" Text="{Binding Endereco}" VerticalAlignment="Top" Width="120" Background="Snow" BorderThickness="2" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="46,193,0,0" TextWrapping="Wrap" Text="{Binding Telefone}" VerticalAlignment="Top" Width="120" Background="Snow" BorderThickness="2" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="46,261,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="120" Background="Snow" BorderThickness="2" BorderBrush="Black"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="46,108,0,0" TextWrapping="Wrap" Text="Endereço:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,39,0,0" TextWrapping="Wrap" Text="Nome Completo:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,172,0,0" TextWrapping="Wrap" Text="Telefone:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="46,240,0,0" TextWrapping="Wrap" Text="E-mail:" VerticalAlignment="Top"/>
+
+        <ListView ItemsSource="{Binding DadosList, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="292" Margin="224,66,0,0" VerticalAlignment="Top" Width="750" Background="Snow" BorderThickness="2" BorderBrush="Black">
+            <ListView.View>
+                <GridView AllowsColumnReorder="False" >
+                    <GridViewColumn Header="Nome" Width="300">
+                        <GridViewColumn.CellTemplate>
+                        <DataTemplate>
+                                <TextBlock Text="{Binding Dados.Nome,NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate> 
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Endereço" Width="170">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Dados.Endereco, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+
+                    <GridViewColumn Header="Telefone" Width="90">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Dados.Telefone, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="E-mail" Width="190">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Dados.Email, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                            
+                        </GridViewColumn.CellTemplate>
+
+                    </GridViewColumn>
+
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+
+
+
+</Window>
